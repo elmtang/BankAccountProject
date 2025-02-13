@@ -9,4 +9,11 @@ public class BankAccount
         this.balance = initialBalance;
     }
 
+    public void Withdraw(decimal amount)
+    {
+        if (amount <= balance)
+            balance -= amount;
+    }
+
+
 }
